@@ -6,8 +6,24 @@
     <title>Vortex Help Page</title>
      <link rel="stylesheet" href="dist/css/bootstrap.css">
     <script src="dist/js/bootstrap.js"></script>
+    <style>
+        .bg{
+            width: 100%;
+  height: 400px;
+  /* Deep base color */
+  background-color: #4a0e0e; 
+  /* Overlapping gradients create the "folds" */
+  background-image: 
+    linear-gradient(125deg, rgba(255,255,255,0.3) 0%, rgba(0,0,0,0) 40%, rgba(255,255,255,0.1) 60%, rgba(0,0,0,0.4) 100%),
+    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 75%, transparent 75%, transparent);
+  background-size: 200% 200%;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+    
+    </style>
 </head>
-<body>
+<body class="bg">
+    
     <section class="row">
             <div class="col-lg-12">
                 <!-- Below tag element will hold all the contents of the Navbar -->
@@ -28,6 +44,75 @@
                  </nav>
             </div>
          </section> <hr>
+
+         <h3 class="text-warning text-center bg-danger display-4">Change Your Flight</h3>
+         <h5 class="text-light text-center ">Enter your details to view your flights and make changes to your Emirates booking.</h5> <br>
+         <center> <input type="text" placeholder="First Name">
+         <input type="text" placeholder="Last Name"> <br> <br>
+         <input type="submit" value="RETRIEVE BOOKING" class="btn btn-outline-warning"></center> <hr>
          
+         <h3 class="text-warning text-center bg-danger display-4">Frequently asked questions</h3>
+           <center><select> 
+                        <option value="0">Can I cancel my booking?</option>
+                        <option value="1">How do I change details of my trip online after I've completed booking?</option>
+                        <option value="2">Can I make changes online for only one passenger in the booking?</option>
+                        <option value="3">Can I change a booking made with Miles or points online?</option>
+                    </select></center> <br> <hr>
+                    <h3 class="text-warning text-center bg-danger display-4">Lost property</h3>
+                    <section class="row text-center text-light">
+                        <div class="col-lg-4">
+                            <h4>How to report lost property</h4>
+                            <p>If you’re at the airport, please speak to a member of the Vortex team for help. If you’ve already left the airport, please complete our lost property form to report missing personal items or cabin baggage and we’ll investigate promptly.</p>
+                            <p>Use this form if you were travelling on a Vortex aircraft and have a ticket number starting with 176. If you were travelling on an aircraft operated by another airline, please contact them directly, even if you have a Vortex ticket.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h4>How to report missing checked-in baggage</h4>
+                            <p>If you’ve lost your checked in bags or they haven’t arrived on your Vortex flight, please contact us .</p>
+                        </div>
+                        <div class="col-lg-4">
+                             <div class="card shadow">
+                    <div class="card-header">
+                        <h3 class="text-center text-dark">Your personal details</h3>
+                     </div>
+                      <div class="card-body">
+                        <input type="text" placeholder="Title"> <br> <br>
+                        <input type="text" placeholder="First Name"> <br> <br>
+                        <input type="text" placeholder="Last Name"> <br> <br>
+                        <input type="email" placeholder="Email"> <br> <br>
+                        <input type="text" placeholder="Confirm email"> <br> <br>
+                        <input type="text" placeholder="Country code"> &nbsp;<input type="number" placeholder="Area code">
+                      </div>
+                         <div class="card-footer">
+                                <h4 class="text-start bg-dark text-warning">
+                                    
+                                
+                         </div>
+                 </div>
+                        </div>
+                    </section>
+                    <section class="row bg-info text-light nh">
+                        <div class="col-lg-4 p-4">
+                            <h4 class="text-center">About Us</h4>
+                            <p><b>We are Vortex Airlines a one of a kind airline company dedicated to not only ferry you from point A to B but also ensure that you arrive in one piece and luxury coated.</b></p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h4 class="text-center">Tell Us more for even higher quality services </h4>
+                            <form>
+                            <textarea placeholder="Your honest opinion and very vital comment" cols="60" rows="5" class="form-control"></textarea> <br> <br>
+                            <input type="submit" value="Send Message" class="btn btn-outline-warning">
+                            </form>
+                        </div>
+                        <div class="col-lg-4 p-4 text-center">
+                            <h4 class="text-center">Stay Connected</h4>
+                            <a href="https://www.facebook.com/"><img src="images/fb.jpg" alt="fb" width="50px" height="50px"></a>
+                            <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="in" width="50px" height="50px"></a>
+                            <a href="https://x.com/"> <img src="images/x.jpg" alt="" width="60px" height="50px"></a>
+                            <br>
+                            <p class="text-light"><b>Follow our Facebook, Instagram and X accounts to directly inform us of your flight experience and get other mindblowing offers.</b></p>
+                        </div>
+                    </section> 
+                    <footer class="bg-secondary text-center text-warning p-2">
+                        <h3><b>Vortex Airlines. &copy;2026.All rights reserved.</b></h3>
+                    </footer>
 </body>
 </html>

@@ -45,8 +45,8 @@
 
                     <div id="navbarcontents" class="navbar-collapse collapse">
                         <div class="navbar-nav">
-                            <a href="experience.html" class="nav-link"><img src="images/xp.jpg" alt="" height="100px" width="100px"></a>
-                            <a href="help.html" class="nav-link"><img src="images/help.jpg" alt="" height="100px" width="100px"></a>
+                            <a href="experience.html" class="nav-link"><b>EXPERIENCE</b></a>
+                            <a href="help.html" class="nav-link active"><b>HELP</b></a>
                         </div>
                     </div>
                  </nav>
@@ -95,76 +95,155 @@
             </div>
          </section> <hr>
 
-         <h3 class="text-warning text-center bg-danger display-4"><b>Change Your Flight</b></h3>
-         <h5 class="text-light text-center ">Enter your details to view your flights and make changes to your Vortex booking.</h5> <br>
-         <center> <input type="text" placeholder="First Name">
-         <input type="text" placeholder="Last Name"> <br> <br>
-         <input type="submit" value="RETRIEVE BOOKING" class="btn btn-outline-warning"></center> <hr>
-         
-         <h3 class="text-warning text-center bg-danger display-4"><b>Frequently asked questions</b></h3>
-           <center><select> 
-                        <option value="0">Can I cancel my booking?</option>
-                        <option value="1">How do I change details of my trip online after I've completed booking?</option>
-                        <option value="2">Can I make changes online for only one passenger in the booking?</option>
-                        <option value="3">Can I change a booking made with Miles or points online?</option>
-                    </select></center> <br> <hr>
-                    <h3 class="text-warning text-center bg-danger display-4"><b>Lost property</b></h3>
-                    <section class="row text-center text-light">
-                        <div class="col-lg-4">
-                            <h4>How to report lost property</h4>
-                            <p>If you’re at the airport, please speak to a member of the Vortex team for help. If you’ve already left the airport, please complete our lost property form to report missing personal items or cabin baggage and we’ll investigate promptly.</p>
-                            <p>Use this form if you were travelling on a Vortex aircraft and have a ticket number starting with 176. If you were travelling on an aircraft operated by another airline, please contact them directly, even if you have a Vortex ticket.</p>
+       <section class="py-5 bg-dark">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8">
+                <div class="card bg-secondary border-0 shadow-lg">
+                    <div class="card-header bg-warning text-dark text-center py-3">
+                        <h2 class="h4 mb-0 fw-bold text-uppercase tracking-wider">Change Your Flight</h2>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <p class="text-light text-center mb-4">Enter your details to retrieve your Vortex booking and modify your itinerary.</p>
+                        
+                        <form class="row g-3 justify-content-center">
+                            <div class="col-md-5">
+                                <label class="text-warning small mb-1">First Name</label>
+                                <input type="text" class="form-control bg-dark text-white border-0" placeholder="e.g. John">
+                            </div>
+                            <div class="col-md-5">
+                                <label class="text-warning small mb-1">Last Name</label>
+                                <input type="text" class="form-control bg-dark text-white border-0" placeholder="e.g. Doe">
+                            </div>
+                            <div class="col-md-10 d-grid mt-4">
+                                <button type="submit" class="btn btn-warning fw-bold py-2">RETRIEVE BOOKING</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="text-warning text-center mb-4">Frequently Asked Questions</h3>
+                
+                <div class="accordion accordion-flush shadow" id="faqAccordion">
+                    <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Can I cancel my booking?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body small text-light-50">
+                                Yes, cancellations are allowed up to 24 hours before departure. Fees may apply depending on your ticket class.
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <h4>How to report missing checked-in baggage</h4>
-                            <p>If you’ve lost your checked in bags or they haven’t arrived on your Vortex flight, please contact us .</p>
+                    </div>
+                    
+                    <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How do I change details of my trip online?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body small text-light-50">
+                                Use the "Retrieve Booking" tool above to access your flight details and select "Modify Itinerary."
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                             <div class="card shadow">
-                    <div class="card-header">
-                        <h4 class="text-center text-dark">Your personal details</h4>
-                     </div>
-                      <div class="card-body">
-                        <input type="text" placeholder="Title"> <br> <br>
-                        <input type="text" placeholder="First Name"> <br> <br>
-                        <input type="text" placeholder="Last Name"> <br> <br>
-                        <input type="email" placeholder="Email"> <br> <br>
-                        <input type="text" placeholder="Confirm email"> <br> <br>
-                        <input type="text" placeholder="Country code"> &nbsp;<input type="number" placeholder="Area code">
-                      </div>
-                         <div class="card-footer">
-                                <h4 class="text-start bg-dark text-warning">
-                                    
-                                
-                         </div>
-                 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    
+                    <section class="py-5 bg-dark">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center text-light mb-5">
+                                    <h2 class="display-6 fw-bold text-warning">Lost Property</h2>
+                                    <p class="text-secondary lead">We'll help you reunite with your belongings as quickly as possible.</p>
+                                </div>
+                            </div>
+
+                            <div class="row g-4 justify-content-center text-light">
+                                <div class="col-md-5">
+                                    <div class="card h-100 bg-secondary border-0 p-4 shadow-sm">
+                                        <div class="mb-3">
+                                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill uppercase">Current Location: Airport</span>
+                                        </div>
+                                        <h4>Immediate Assistance</h4>
+                                        <p class="small text-light-50">Please speak to a member of the <strong class="text-warning">Vortex Team</strong> at any service desk for real-time tracking of items left at the gate or in the lounge.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div class="card h-100 bg-secondary border-0 p-4 shadow-sm border-start border-warning border-4">
+                                        <div class="mb-3">
+                                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill uppercase">Current Location: Home/Other</span>
+                                        </div>
+                                        <h4>Digital Report</h4>
+                                        <p class="small">Complete our <strong>Lost Property Form</strong> for missing personal items or cabin baggage. We’ll investigate and contact you promptly.</p>
+                                        <button class="btn btn-outline-warning btn-sm mt-2">Open Report Form</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-10 mt-4">
+                                    <div class="p-3 rounded bg-dark border border-secondary text-center">
+                                        <p class="mb-0 small text-secondary">
+                                            <i class="bi bi-info-circle me-2 text-warning"></i>
+                                            Vortex handles claims for ticket numbers starting with <strong>176</strong>. 
+                                            If your flight was operated by a partner airline, please contact them directly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                   <section class="row bg-info text-light">
+                    </section>
+     
+                   <section class="row text-light bg-dark">
                         <div class="col-lg-4 p-4">
-                            <h1 class="text-center">About Us</h1>
-                            <p><b>We are Vortex Airlines a one of a kind airline company dedicated to not only ferry you from point A to B but also ensure that you arrive in one piece and luxury coated.</b></p>
+                            <h1 class="text-warning mb-4 border-bottom border-secondary pb-2">About Us</h1>
+                                <p class="lead">We are <span class="text-warning fw-bold">Vortex Airlines</span>.</p>
+                                <p class="text-info"><b>
+                                    More than just a carrier, we are your gateway to the world. We bridge continents while ensuring you arrive refreshed, safe, and draped in luxury.</b>
+                                </p>
                         </div>
                         <div class="col-lg-4">
-                            <h1 class="text-center">Tell Us more for even higher quality services </h1>
+                           <h1 class="text-center text-warning mb-4">Feedback</h1>
+                          <p class="small text-center text-info mb-4"><b>Help us elevate your next journey.</b></p>
                             <form>
-                            <textarea placeholder="Your honest opinion and very vital comment" cols="60" rows="5" class="form-control"></textarea> <br> <br>
-                            <input type="submit" value="Send Message" class="btn btn-outline-warning">
+                                <div class="mb-3">
+                                    <textarea placeholder="Your experience matters to us..." rows="4" class="form-control bg-secondary text-white border-0"></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-warning fw-bold text-dark">Send Message</button>
+                                </div>
                             </form>
                         </div>
                         <div class="col-lg-4 p-4 text-center">
-                            <h1 class="text-center">Stay Connected</h1>
-                            <a href="https://www.facebook.com/"><img src="images/fb.jpg" alt="fb" width="50px" height="50px"></a>
-                            <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="in" width="50px" height="50px"></a>
-                            <a href="https://x.com/"> <img src="images/x.jpg" alt="" width="60px" height="50px"></a>
-                            <br>
-                            <p class="text-dark">Follow our Facebook, Instagram and X accounts to directly inform us of your flight experience and get other mindblowing offers.</p>
-                            <p class="text-dark text-start"><b>TEL NO. : +254 189 011 900</b></p>
-                            <p class="text-dark text-start"><b>GMAIL : help@vortex.co.ke</b></p>
-                            <p class="text-dark text-start"><b>LOCATION : 4th Floor, Complex 001, Jomo Kenyatta International Airport</b></p>
-                        </div>
+                            <h1 class="text-center text-warning mb-4">Stay Connected</h1>
+                <div class="d-flex justify-content-center gap-4 mb-4">
+                    <a href="#" class="social-icon"><img src="images/fb.jpg" alt="Facebook" class="rounded-circle shadow" width="45" height="45"></a>
+                    <a href="#" class="social-icon"><img src="images/insta.jpg" alt="Instagram" class="rounded-circle shadow" width="45" height="45"></a>
+                    <a href="#" class="social-icon"><img src="images/x.jpg" alt="X" class="rounded-circle shadow" width="45" height="45"></a>
+                </div>
+                
+                <div class="contact-info small text-info">
+                    <p class="mb-2"><i class="bi bi-telephone text-warning me-2"></i> <strong>TEL:</strong> +254 189 011 900</p>
+                    <p class="mb-2"><i class="bi bi-envelope text-warning me-2"></i> <strong>EMAIL:</strong> help@vortex.co.ke</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt text-warning me-2"></i> <strong>LOCATION:</strong> JKIA, Complex 001, 4th Floor</p>
+                </div>
                     </section> 
-                    <footer class="bg-secondary text-center text-warning p-2">
-                        <h3><b>Vortex Airlines. &copy;2026.All rights reserved.</b></h3>
+                    <footer class="bg-dark text-center py-4 border-top border-warning">
+                    <p class="mb-0 text-light uppercase tracking-widest">
+                        <span class="text-warning fw-bold">VORTEX</span> AIRLINES 
+                        <span class="mx-2">|</span> 
+                        <small class="text-muted">&copy; 2026. All rights reserved.</small>
+                    </p>
                     </footer>
 </body>
 </html>

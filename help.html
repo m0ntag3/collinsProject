@@ -22,6 +22,9 @@
     h3{
         text-decoration: solid overline;
     }
+    h4{
+        text-decoration: underline;
+    }
     </style>
 </head>
 <body class="bg">
@@ -46,9 +49,39 @@
                  </nav>
             </div>
          </section> <hr>
+          <section class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <!-- Below is the division that will hold all the contents of the carousel -->
+                 <div class="carousel slide" data-bs-ride="carousel" id="mycarousel1">
+                    <!-- Below is the div that will hold all the images -->
+                     <div class="carousel-inner">
+                        <!-- Below is the div with the first image -->
+                         <div class="carousel-item">
+                            <img src="images/ad4rep.png" alt="ad one" height="500px" class="d-block w-100">
+                         </div>
+                         <!-- Below is the div with the second image -->
+                          <div class="carousel-item">
+                            <img src="images/ad6rep.png" alt="ad two" height="500px" class="d-block w-100">
+                          </div>
+                          <!-- Below is the div with the third image -->
+                           <div class="carousel-item">
+                            <img src="images/ad1.jpg" alt="ad three" height="500px" class="d-block w-100">
+                           </div>
+                           <!-- Below is the div with the fourth image -->
+                            <div class="carousel-item active">
+                                <img src="images/ad2.jpg" alt="ad four" height="500px" class="d-block w-100">
+                            </div>
+                     </div>
+
+                     <!-- Below are the Controls -->
+                      <a href="#mycarousel1" data-bs-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon bg-warning"></span></a>
+                      <a href="#mycarousel1" data-bs-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon bg-warning"></span></a>
+                 </div>
+            </div>
+         </section> <hr>
 
          <h3 class="text-warning text-center bg-danger display-4"><b>Change Your Flight</b></h3>
-         <h5 class="text-light text-center ">Enter your details to view your flights and make changes to your Emirates booking.</h5> <br>
+         <h5 class="text-light text-center ">Enter your details to view your flights and make changes to your Vortex booking.</h5> <br>
          <center> <input type="text" placeholder="First Name">
          <input type="text" placeholder="Last Name"> <br> <br>
          <input type="submit" value="RETRIEVE BOOKING" class="btn btn-outline-warning"></center> <hr>
@@ -74,7 +107,7 @@
                         <div class="col-lg-4">
                              <div class="card shadow">
                     <div class="card-header">
-                        <h3 class="text-center text-dark">Your personal details</h3>
+                        <h4 class="text-center text-dark">Your personal details</h4>
                      </div>
                       <div class="card-body">
                         <input type="text" placeholder="Title"> <br> <br>
